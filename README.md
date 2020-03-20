@@ -105,9 +105,8 @@ C:\Users\Administrator\AppData\Roaming\npm\hexo.cmd
 ```bat
 > cd MakeThings-team.blog
 
-# 也可以手动删除
-> rm -rf source\_posts\newPost
-> rm -rf source\_posts\newPost.md
+> git rm -r source\_posts\newPost
+> git rm source\_posts\newPost.md
 
 > git add source\_posts\newPost source\_posts\newPost.md
 > git commit -m "delete a post."
