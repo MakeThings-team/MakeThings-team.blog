@@ -19,7 +19,9 @@ MakeThings-team blog Source Code.
 
 ## 部署
 
-- 安装Hexo：安装好nodejs之后执行以下命令将会在全局npm模块中安装`hexo`命令
+### 安装Hexo
+
+安装好nodejs之后执行以下命令将会在全局npm模块中安装`hexo`命令
 
 ```bat
 # 配置npm全局代理，也可以手动编辑C:\Users\你的用户名\.npmrc
@@ -38,7 +40,7 @@ C:\Users\Administrator\AppData\Roaming\npm\hexo.cmd
 
 
 
-- 下载博客源码并初始化
+### 下载博客源码并初始化
 
 ```bat
 # 配置git全局代理
@@ -59,7 +61,7 @@ C:\Users\Administrator\AppData\Roaming\npm\hexo.cmd
 
 
 
-- 发布新帖子；新帖子不建议使用中文名称，将在删除它时带来麻烦
+### 发布新帖子；新帖子不建议使用中文名称，将在删除它时带来麻烦
 
 ```bat
 > cd MakeThings-team.blog
@@ -71,7 +73,7 @@ C:\Users\Administrator\AppData\Roaming\npm\hexo.cmd
 
 
 
-- 上传帖子源码并部署帖子，以显示在网站上
+### 上传帖子源码并部署帖子，以显示在网站上
 
 以下命令需要登陆您的github账号并且`hexo d`命令需要认证您的`ssh public key`，可以联系xcc.int3@gmail.com以认证您的`ssh public key`
 
@@ -98,7 +100,7 @@ C:\Users\Administrator\AppData\Roaming\npm\hexo.cmd
 
 
 
-- 删除帖子
+### 删除帖子
 
 ```bat
 > cd MakeThings-team.blog
@@ -122,7 +124,7 @@ C:\Users\Administrator\AppData\Roaming\npm\hexo.cmd
 
 
 
-- 最后可以选择是否需要删除npm和git全局代理
+### 选择是否需要删除npm和git全局代理
 
 ```bat
 # 删除git全局代理
