@@ -3,7 +3,7 @@ MakeThings-team blog Source Code.
 
 
 
-## 如何加入我们
+## 加入我们
 
 编辑您的**github用户名**和**github邮箱**以及您的**ssh public key**发送到xcc.int3@gmail.com以便邀请您加入我们的组织。
 
