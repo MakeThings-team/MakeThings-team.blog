@@ -61,7 +61,9 @@ C:\Users\Administrator\AppData\Roaming\npm\hexo.cmd
 
 
 
-### 发布新帖子；新帖子不建议使用中文名称，将在删除它时带来麻烦
+### 发布新帖子
+
+新帖子不建议使用中文名称，将在删除它时带来麻烦
 
 ```bat
 > cd MakeThings-team.blog
