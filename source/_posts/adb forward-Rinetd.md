@@ -6,7 +6,8 @@ categories:
 - [Android, Tools]
 
 tags:
-- adb forward
+- Android
+- adb
 - Rinetd
 ---
 

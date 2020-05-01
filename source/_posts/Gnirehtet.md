@@ -6,8 +6,8 @@ categories:
 - [Android, Tools]
 
 tags:
+- Android
 - Gnirehtet
-- USB方式上网
 ---
 
 

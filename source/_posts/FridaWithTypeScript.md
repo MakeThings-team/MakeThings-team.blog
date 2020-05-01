@@ -44,3 +44,5 @@ $ frida -U -f com.example.android --runtime=v8 --no-pause -l _agent.js
 
 
 
+## 好用的TypeScript脚本
+
