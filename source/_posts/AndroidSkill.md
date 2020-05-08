@@ -11,6 +11,17 @@ tags:
 
 
 
+## APK安装失败[INSTALL_FAILED_VERIFICATION_FAILURE]
+
+```bash
+adb shell su -c settings put global package_verifier_enable 0
+adb shell su -c settings put global verifier_verify_adb_installs 0
+```
+
+
+
+
+
 ## 不插拔USB恢复offline状态的设备
 
 ```shell
