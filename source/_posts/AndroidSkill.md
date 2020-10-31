@@ -1,5 +1,5 @@
 ---
-title: Android Skill：奇技淫巧
+title: Android Skill：小技巧
 date: 2020-03-07 13:42:47
 
 categories:
@@ -20,16 +20,12 @@ adb shell su -c settings put global verifier_verify_adb_installs 0
 
 
 
-
-
 ## 不插拔USB恢复offline状态的设备
 
 ```shell
 $ adb devices
 $ adb -s serial reconnect
 ```
-
-
 
 
 
@@ -42,13 +38,9 @@ $ adb shell dumpsys package com.ss.android.ugc.aweme
 
 
 
-
-
 ## armeabi-v7a系统调用表
 
 https://android.googlesource.com/platform/external/kernel-headers/+/refs/tags/android-6.0.1_r66/original/uapi/asm-arm/asm/unistd.h
-
-
 
 
 
@@ -73,8 +65,6 @@ https://developer.android.com/ndk/guides/abis.html#sa
 
 
 
-
-
 ## 调整屏幕亮度
 
 ```shell
@@ -88,8 +78,6 @@ $ adb shell su
 
 
 
-
-
 ## 截图
 
 ```shell
@@ -99,28 +87,11 @@ $ adb shell screencap -p /sdcard/01.png & adb pull /sdcard/01.png
 
 
 
-
-## 删除密码
-
-```shell
-$ adb shell su
-# rm /data/system/access_control.key
-# rm /data/system/password.key
-# rm /data/sysem/gesture.key
-# reboot -p
-```
-
-
-
-
-
 ## 获取Application和Context
 
 ```java
 android.app.ActivityThread.currentApplication().getApplicationContext()
 ```
-
-
 
 
 
@@ -134,15 +105,11 @@ android logcat原理：http://gityuan.com/2018/01/27/android-log/
 
 
 
-
-
 ## 打开Url Scheme协议链接
 
 ```shell
 $ adb shell am start -a android.intent.action.VIEW -d "snssdk1128://user/profile/3733569708763603"
 ```
-
-
 
 
 
@@ -157,8 +124,6 @@ $ su
 # chmod 644 /etc/security/cacerts/*
 # chown root:root /etc/security/cacerts/*
 ```
-
-
 
 
 
@@ -216,8 +181,6 @@ $ adb shell su -c cat /proc/9907/cgroup
 
 
 
-
-
 ## 查找顶级Activity
 
 ```shell
@@ -252,8 +215,6 @@ Display #0 (activities from top to bottom):
 
 
 
-
-
 ## 更改adbd的监听端口
 
 ```bash
@@ -262,8 +223,6 @@ $ adb shell su
 # stop adbd
 # start adbd
 ```
-
-
 
 
 
@@ -277,8 +236,6 @@ $ adb shell su
 `https://developer.android.com/reference/android/provider/Settings.Global.html#ADB_ENABLED`
 
 `https://android.googlesource.com/platform/frameworks/base/+/android-4.4_r1.2/services/java/com/android/server/usb/UsbDeviceManager.java`
-
-
 
 
 
@@ -311,8 +268,6 @@ GOTO :EOF
 
 
 
-
-
 ## TWRP模式下挂载指定分区
 
 ```bash
@@ -324,8 +279,6 @@ adb shell
 
 
 
-
-
 ## Ubuntu 上使用 Android-SDK
 
 - 安装`platforms`时需要注意引号
@@ -334,8 +287,6 @@ adb shell
   root@github:/opt/android_sdk# ./tools/bin/sdkmanager --install "platforms;android-23"
   [=======================================] 100% Unzipping... android-6.0/source.p
   ```
-
-
 
 
 
@@ -352,8 +303,6 @@ tmpfs /dev tmpfs rw,seclabel,nosuid,relatime,size=1424720k,nr_inodes=356180,mode
 
 
 
-
-
 ## Hide all methods with CMAKE
 
 在 CMAKE 中设置隐藏所有方法(不显示他们的符号)；
@@ -364,8 +313,6 @@ Hide all methods without add "\_\_attribute\_\_(visibility("default"))" for ever
 set_target_properties(YOUR_TARGET_NAME PROPERTIES CXX_VISIBILITY_PRESET hidden)
 set_target_properties(YOUR_TARGET_NAME PROPERTIES C_VISIBILITY_PRESET hidden)
 ```
-
-
 
 
 
